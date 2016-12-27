@@ -11,8 +11,8 @@ class AdultfilmdatabaseSpider(CrawlSpider):
     name = "adultfilmdatabase"
     allowed_domains = ["adultfilmdatabase.com"]
     start_urls = [
-        # 'http://www.adultfilmdatabase.com/browse.cfm?filter=&imageFlag=1&genderFilter=F&eyeFilter=&hairFilter=&startFilter=&type=actor'
-        'http://www.adultfilmdatabase.com/browse.cfm?filter=an&imageFlag=1&genderFilter=&eyeFilter=&hairFilter=&startFilter=&type=actor' # 2 pages
+        'http://www.adultfilmdatabase.com/browse.cfm?filter=&imageFlag=1&genderFilter=&eyeFilter=&hairFilter=&startFilter=&type=actor'
+        #'http://www.adultfilmdatabase.com/browse.cfm?filter=an&imageFlag=1&genderFilter=&eyeFilter=&hairFilter=&startFilter=&type=actor' # 2 pages
     ]
 
     rules = (
