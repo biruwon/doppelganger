@@ -17,10 +17,10 @@ class AdultfilmdatabaseSpider(CrawlSpider):
 
     rules = (
         Rule(LinkExtractor(restrict_xpaths="//td[@class='px11'][2]/a"), follow=True),
-        Rule(LinkExtractor(restrict_xpaths="//tr[@class='bgLG']"), callback='parse_actress_links', follow=True),
+        Rule(LinkExtractor(restrict_xpaths="//tr[@class='bgLG']"), callback='parse_actress_link', follow=True),
     )
 
-    def parse_actress_links(self, response):
+    def parse_actress_link(self, response):
         #inspect_response(response, self)
         actress_path = response.request.url.rsplit('/')[-2]
         actress_name = actress_path.rpartition('-')[0]

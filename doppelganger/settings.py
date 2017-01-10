@@ -68,7 +68,8 @@ ITEM_PIPELINES = {
     'doppelganger.pipelines.DoppelgangerPipeline': 1,
 }
 
-IMAGES_STORE = '/home/arodriguez/tsp/projects/personal/doppelganger/images'
+#IMAGES_STORE = '/home/arodriguez/tsp/projects/personal/doppelganger/images'
+IMAGES_STORE = '/home/arodriguez/tsp/projects/personal/doppelganger/images_test'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
