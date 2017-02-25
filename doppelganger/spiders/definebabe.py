@@ -20,6 +20,7 @@ class DefinebabeSpider(CrawlSpider):
         start_urls.append(base_path + letter)
 
     rules = (
+        # This is skipping the ones with only 2 pages!!! copy solution from main-image spider
         Rule(LinkExtractor(restrict_xpaths="//a[contains(text(),'Next')]"), follow=True),
         Rule(LinkExtractor(restrict_css='.babes-letter-list'), callback='generate_galley_link', follow=True),
     )
